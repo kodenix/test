@@ -1,0 +1,4 @@
+# Ignoramos la carpeta idea para permitir el multiusuario
+.idea/
+app-info.json
+
