@@ -17,6 +17,7 @@ $authCode = \trim(\readline("YVn3nrDJlBEAAAAAAAAGksz7E7w9gK-OSXaMeWQImLc"));
 list($accessToken, $dropboxUserId) = $webAuth->finish($authCode);
 print "Access Token: " . $accessToken . "\n";
 
+/*
 $dbxClient = new dbx\Client($accessToken, "PHP-Example/1.0");
 $accountInfo = $dbxClient->getAccountInfo();
 
@@ -33,5 +34,5 @@ print_r($folderMetadata);
 $f = fopen("working-draft.txt", "w+b");
 $fileMetadata = $dbxClient->getFile("/working-draft.txt", $f);
 fclose($f);
-print_r($fileMetadata);
+print_r($fileMetadata);*/
 
