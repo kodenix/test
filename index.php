@@ -7,5 +7,5 @@ use \Dropbox as dbx;
 $appInfo = dbx\AppInfo::loadFromJsonFile("app-info.json");
 $webAuth = new dbx\WebAuthNoRedirect($appInfo, "PHP-Example/1.0");
 
-echo PHP_INT_MAX;
+$authorizeUrl = $webAuth->start();
 
